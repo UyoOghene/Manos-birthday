@@ -1,0 +1,263 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #bc92c4, #1e58d7);
+    background-size: cover;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: cursive;
+
+}
+
+#wish {
+    background-color: rgb(34, 106, 169);
+    border-radius: 20px;
+    padding: 10px 20px; 
+    font-size: 20px;
+    font-weight: bold; 
+    font-family: 'Cursive', 'Comic Sans MS', 'Arial', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s; 
+}
+
+#intro-wish{
+
+}
+
+#clickforaudio{
+    border-radius: 20px;
+    border: 0px;
+
+}
+#clickforaudio:hover{
+    background-color: #68468dee;
+    font-size: 20px;
+    cursor: grab;
+
+}
+
+#audiodiv{
+    padding: solid ;
+    display:none ;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: solid ;
+}
+
+.soundDiv{
+    padding: 2px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px ;
+    height: 40px;
+}
+.sounds{
+    height: 20px;
+}
+#nextBtn{
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 5px;
+
+}
+#nextBtn:hover{
+    border-radius: 20px;
+        background-color: #68468dee;
+        font-size: 20px;
+        cursor: grab;
+    }
+    
+
+#factsDiv{
+    
+    /* border: 2px solid black; */
+    background: linear-gradient(to right, #6243b0, #da78b6);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20em;
+    width: 30em;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#factBox2{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+}
+
+#factBox4{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+
+}
+#factBox3{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+}
+#factBox5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+}
+#factBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.factbox{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.factpicdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+}
+#factTxt{
+    font-size: large;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
+}
+
+.factpics{
+    height: 12em;
+    width: 12em; 
+}
+
+.fact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+#End{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 201, 223);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(17, 81, 116, 0.504);
+
+}
+
+#endPageText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        font-size: 16px;
+        height: 100%;
+        overflow-y:visible ;
+    }
+    #wish {
+        font-size: 15px;
+        padding: 8px 16px;
+        border-radius: 15px;
+    }
+
+    #clickforaudio {
+        width: 70%;
+        font-size: 16px;
+        padding: 2px;
+        margin: 2px 0;
+        font-family: cursive;
+    }
+
+    #audiodiv {
+        width: 70%;
+        padding: 5pxx;
+    }
+
+    .soundDiv {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .sounds {
+        width: 10em;
+        height: 40px;
+    }
+
+    #nextBtn {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #factsDiv {
+        width: 70%;
+        height: auto;
+        font-family: cursive;
+    }
+
+    #factBox1, #factBox2, #factBox3, #factBox4, #factBox5 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .factpicdiv {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .factpics {
+        width: 10em;
+        height: 10em;
+    }
+
+    #endPageText {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
