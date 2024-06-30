@@ -18,6 +18,15 @@ const nextfactBtn4 = document.querySelector('#nextfactBtn4');
 const nextfactBtn5 = document.querySelector('#nextfactBtn5');
 const endPage = document.querySelector('#End');
 
+for (let i = 0; i < 100; i++) {
+    const confetti = document.createElement("div");
+    confetti.className = "confetti";
+    confetti.style.left = `${Math.random() * 100}vw`;
+    confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+    confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    document.body.appendChild(confetti);
+}
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';

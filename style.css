@@ -1,9 +1,10 @@
-body{
+
+body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #bc92c4, #1e58d7);
     background-size: cover;
-    display:flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -11,7 +12,6 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 #wish {
@@ -20,7 +20,7 @@ body{
     padding: 10px 20px; 
     font-size: 20px;
     font-weight: bold; 
-    font-family:  'Comic Sans MS', 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
     text-transform: uppercase; 
     letter-spacing: 2px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -29,61 +29,90 @@ body{
     transition: background-color 0.5s, color 0.5s; 
 }
 
-#intro-wish{
+#intro-wish {}
 
-}
-
-#clickforaudio{
+#clickforaudio {
+    border: none;
     border-radius: 20px;
-    border: 0px;
-
-}
-#clickforaudio:hover{
-    background-color: #68468dee;
+    padding: 10px 20px; 
     font-size: 20px;
-    cursor: grab;
+    font-weight: bold; 
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s; 
+    background-color: #85e6e6ee;
 
 }
 
-#audiodiv{
-    padding: solid ;
-    display:none ;
+#clickforaudio:hover {
+    background-color: #68468dee;
+    transition: background-color 0.5s, color 0.5s; 
+
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#audiodiv {
+    padding: solid;
+    display: none;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: solid ;
+    gap: solid;
 }
 
-.soundDiv{
+.soundDiv {
     padding: 2px;
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2px ;
+    gap: 2px;
     height: 40px;
 }
-.sounds{
+
+.sounds {
     height: 20px;
 }
-#nextBtn{
-    border: 0px;
-    border-radius: 20px;
-    margin-top: 5px;
 
+#nextBtn,
+#nextfactBtn,
+#nextfactBtn2,
+#nextfactBtn3,
+#nextfactBtn4,
+#nextfactBtn5 {
+    width: 90%;
+    font-size: 20px;
+    padding: 15px 25px;
+    margin: 10px 0;
+    background-color: #ff47d1; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 25px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
-#nextBtn:hover{
-    border-radius: 20px;
-        background-color: #68468dee;
-        font-size: 20px;
-        cursor: grab;
-    }
-    
 
-#factsDiv{
-    
-    /* border: 2px solid black; */
+#nextBtn:hover,
+#nextfactBtn:hover,
+#nextfactBtn2:hover,
+#nextfactBtn3:hover,
+#nextfactBtn4:hover,
+#nextfactBtn5:hover {
+    background-color: #ae00ff; 
+    transform: scale(1.05); 
+}
+
+#factsDiv {
     background: linear-gradient(to right, #6243b0, #da78b6);
     box-shadow: 10px 10px 10px black;
     border-radius: 20px;
@@ -95,10 +124,9 @@ body{
     width: 30em;
     margin: 0px;
     padding: 0px;
-
 }
 
-#factBox2{
+#factBox2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -106,22 +134,23 @@ body{
     display: none;
 }
 
-#factBox4{
+#factBox4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2px;
     display: none;
+}
 
-}
-#factBox3{
+#factBox3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2px;
     display: none;
 }
-#factBox5{
+
+#factBox5 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +158,8 @@ body{
     gap: 2px;
     display: none;
 }
-#factBox1{
+
+#factBox1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +167,7 @@ body{
     gap: 2px;
 }
 
-.factbox{
+.factbox {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -145,51 +175,49 @@ body{
     justify-content: center;
 }
 
-.factpicdiv{
+.factpicdiv {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
-
 }
-#factTxt{
+
+#factTxt {
     font-size: larger;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     text-align: center;
-
+    background-color: #787eed;
+    border-radius: 20px;
 }
 
-.factpics{
+.factpics {
     height: 12em;
-    width: 12em; 
+    width: 12em;
 }
 
-.fact{
+.fact {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px;
 }
 
-#End{
+#End {
     display: none;
     align-items: center;
     justify-content: center;
     background-color: rgb(177, 201, 223);
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(17, 81, 116, 0.504);
-
 }
 
-#endPageText{
+#endPageText {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-
 }
-
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
@@ -197,7 +225,7 @@ body{
         flex-direction: column;
         font-size: 16px;
         height: 100%;
-        overflow-y:visible ;
+        overflow-y: visible;
     }
     #wish {
         font-size: 15px;
@@ -208,14 +236,14 @@ body{
     #clickforaudio {
         width: 70%;
         font-size: 16px;
-        padding: 2px;
+        padding: 5px;
         margin: 2px 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #audiodiv {
         width: 70%;
-        padding: 5pxx;
+        padding: 5px;
     }
 
     .soundDiv {
@@ -237,7 +265,7 @@ body{
 
     #factsDiv {
         width: 85%;
-        height: 75% ;
+        height: 75%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
@@ -251,13 +279,35 @@ body{
         gap: 5px;
     }
 
-    .factpics {
-        width: 15em;
-        height: 15em;
-    }
+}
 
-    #endPageText {
-        font-size: 18px;
-        padding: 10px;
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
     }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+.blink img {
+    width: 50px;
+    height: 70px;
 }
