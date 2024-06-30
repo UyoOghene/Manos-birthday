@@ -236,8 +236,8 @@ body{
     }
 
     #factsDiv {
-        width: 70%;
-        height: auto;
+        width: 80%;
+        height: 60% ;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
@@ -252,8 +252,8 @@ body{
     }
 
     .factpics {
-        width: 10em;
-        height: 10em;
+        width: 20em;
+        height: 20em;
     }
 
     #endPageText {
