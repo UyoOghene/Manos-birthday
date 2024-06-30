@@ -66,12 +66,10 @@ body {
 }
 
 #audiodiv {
-    padding: solid;
     display: none;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: solid;
 }
 
 .soundDiv {
@@ -81,7 +79,6 @@ body {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2px;
     height: 40px;
 }
 
