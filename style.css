@@ -17,7 +17,7 @@ body {
 #wish {
     background-color: rgb(34, 106, 169);
     border-radius: 20px;
-    padding: 10px 20px; 
+    padding: 10px; 
     font-size: 20px;
     font-weight: bold; 
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
@@ -29,7 +29,16 @@ body {
     transition: background-color 0.5s, color 0.5s; 
 }
 
-#intro-wish {}
+.soundDiv p {
+    color: aliceblue;
+    font-weight: bold; 
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+}
+
 
 #clickforaudio {
     border: none;
